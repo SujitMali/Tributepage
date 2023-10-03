@@ -1,0 +1,334 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+  }
+  
+  
+/* Header */
+  #main {
+    margin-left: 5px;
+  }
+  
+  .container,.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    .container, .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  
+
+
+  /* Hero Section */
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("hero-bg.jpg") top center;
+    background-size: cover;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+
+
+
+/* Seperate Section */
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background: #f5f8fd;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+
+  .about .content {
+    background-color: #f5f8fd;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); 
+    margin-top:50px;
+  }
+  
+
+
+
+/* About Section   */ 
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about .col-lg-4 img {
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  .about .content {
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: justify; 
+    padding: 20px; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    margin-top:50px;
+  }
+  
+  .about .content {
+    margin-bottom: 15px;
+  }
+
+
+
+
+/*Profile Image*/
+.img-fluid {
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-fluid {
+    border: 4px solid black; 
+  }  
+ 
+  .img-fluid:hover {
+    opacity: 0.8;
+  }
+  
+
+
+
+/* Honor and Achievements */
+  .honor .honor-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  
+  .honor .honor-item {
+    padding: 0 0 20px 20px;
+    margin-top: -20px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  
+  .honor .honor-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  
+  .honor .honor-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .honor .honor-item ul {
+    padding-left: 20px;
+  }
+  
+  .honor .honor-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .honor .honor-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .honor .honor-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f55a0;
+  }
+  
+  
+
+
+  /*Appreciations Design */
+  .appreciations .appreciations-carousel,
+  .appreciations .appreciations-slider {
+    overflow: hidden;
+  }
+  
+  .appreciations .appreciation-item {
+    box-sizing: content-box;
+    text-align: center;
+    min-height: 320px;
+  }
+  
+  .appreciations .appreciation-item .appreciation-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .appreciations .appreciation-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+  }
+  
+  .appreciations .appreciation-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+  }
+  
+  .appreciations .appreciation-item .quote-icon-left,
+  .appreciations .appreciation-item .quote-icon-right {
+    color: #c3e8fa;
+    font-size: 26px;
+  }
+  
+  .appreciations .appreciation-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+  }
+  
+  .appreciations .appreciation-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .appreciations .appreciation-item p {
+    font-style: italic;
+    margin: 0 15px 15px 15px;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 35px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appreciations .appreciation-item p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+  }
+  
+  .appreciations .swiper-pagination {
+    margin-top: 2px;
+    position: relative;
+  }
